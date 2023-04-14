@@ -47,6 +47,16 @@ ai = AI('OpenAssistant/oasst-sft-1-pythia-12b')
 x = ai.generate("<|prompter|>What's the Earth total population<|endoftext|><|assistant|>", num_tokens_to_generate=100)
 print(x['token_str'])
 ```
+Dolly12b example:
+
+```
+from interface import AutoInference as AI
+ai = AI("databricks/dolly-v2-12b")
+prompt = 'Below is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nExplain to me the difference between nuclear fission and fusion.\n### Response:\n'
+x = ai.generate(prompt, num_tokens_to_generate=100)
+print(x['token_str'])
+```
+
 OR
 
 ```bash
