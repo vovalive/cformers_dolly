@@ -49,7 +49,7 @@ print(x['token_str'])
 ```
 Dolly12b example:
 
-```
+```python
 from interface import AutoInference as AI
 ai = AI("databricks/dolly-v2-12b")
 prompt = 'Below is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nExplain to me the difference between nuclear fission and fusion.\n### Response:\n'
