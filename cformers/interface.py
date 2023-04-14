@@ -88,6 +88,10 @@ class ModelUrlMap:
             if mode_str != ""]
 
 MAP_MODEL_TO_URL = { # Replace "/" with "-.-" in the model name
+    # Dolly
+    'databricks/dolly-v2-12b': ModelUrlMap(
+        cpp_model_name="gptneox",
+        int4_fixed_zero="https://huggingface.co/snphs/dolly-v2-12b-q4/resolve/main/int4_fixed_zero.bin"),
     # GPT-J
     'EleutherAI/gpt-j-6B': ModelUrlMap(
         cpp_model_name="gptj",
